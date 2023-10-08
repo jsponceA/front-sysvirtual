@@ -1,0 +1,93 @@
+@import "bootstrap/scss/bootstrap";
+
+:root,
+[data-bs-theme=light] {
+  --width-sidebar: 230px;
+  --ml-sidebar: 230px;
+  --color-company: rgb(58, 184, 116);
+  --color-header: rgb(237, 49, 54);
+}
+
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.pagination .active a {
+  background-color: var(--color-company);
+  border-color: var(--color-company);
+}
+
+.dashboard-header {
+  margin-left: var(--ml-sidebar);
+  background-color: var(--color-header);
+}
+
+.dashboard-sidebar {
+  z-index: 1;
+  width: var(--width-sidebar);
+  --bs-bg-opacity: .8;
+  background-image: var(--bs-gradient) !important;
+  background-color: var(--bs-dark);
+  overflow: auto;
+  transition: display 0.3s ease;
+}
+
+.dashboard-footer {
+  margin-left: var(--ml-sidebar);
+}
+
+.nav-sidebar .nav-link {
+  color: white;
+}
+
+.nav-sidebar .active {
+  --bs-bg-opacity: .8;
+  background-image: var(--bs-gradient) !important;
+  background-color: rgba(var(--bs-black-rgb), var(--bs-bg-opacity)) !important;
+}
+
+.dashboard-main-content {
+  margin-left: var(--ml-sidebar);
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+
+/*.auth-main-content {
+  background-image: url("/fondo_login.webp");
+  background-size: 100% 100%;
+}*/
+
+.custom-table {
+  font-size: 14px;
+
+  thead,
+  tfoot {
+    tr td {
+      background-color: #2990cc;
+      color: white;
+    }
+  }
+
+}
+
+
+.form-control[type="file"]::file-selector-button {
+  background-image: var(--bs-gradient);
+  background-color: rgba(var(--bs-info-rgb), .8) !important;
+  color: white;
+  font-weight: bold;
+}
+
+
+@include media-breakpoint-down(md) {
+  :root {
+    --ml-sidebar: 0
+  }
+}
