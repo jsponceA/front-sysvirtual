@@ -10,7 +10,6 @@ import {
   mdiLock,
   mdiText,
 } from "@mdi/js";
-
 const CursoIndex = () => {
   return (
     <div className="container-fluid">
@@ -37,7 +36,6 @@ const CursoIndex = () => {
             <div className="card-body ">
               <div className="row">
                 <div className="col-md-12">
-                  ASDASD
                   <a-scene
                     embedded
                     arjs="sourceType: webcam; debugUIEnabled: false;"

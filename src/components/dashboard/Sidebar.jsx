@@ -74,7 +74,7 @@ const DashboardSidebar = () => {
           </NavLink>
         </li>
 
-        <li className="nav-item">
+        {/*  <li className="nav-item">
           <NavLink
             to={"/panel/cursos"}
             className="nav-link d-flex align-items-center"
@@ -82,7 +82,7 @@ const DashboardSidebar = () => {
             <Icon path={mdiBook} size={0.8} className="me-1" color="silver" />{" "}
             Cursos
           </NavLink>
-        </li>
+        </li> */}
 
         {/* <li className="nav-item">
           <NavLink
